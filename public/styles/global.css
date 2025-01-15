@@ -1,0 +1,20 @@
+  main {
+    padding: 2rem;
+  }
+
+  :root {
+    --color-fondo-principal: #93063e; /*(Fondo principal) */
+    --color-header: #5a1646; /*(Header)*/
+    --color-footer: #c80034; /*(Footer)*/
+    --color-destacado: #fec500; /*(Botones y destacados)*/
+    --color-texto-principal: #ffffff; /*(Texto Principal)*/
+    --color-texto-secundario: #eeeeee; /*(Texto Secundario)*/
+  }  
+
+  :root{
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --font-size-h1: 1.35rem;
+    --font-size-p: 1rem;
+  }
+  
