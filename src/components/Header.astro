@@ -37,6 +37,22 @@
     </div>
 </nav>
 
+<script>
+    const navbar = document.querySelector('.navbar');
+
+    if(navbar!=null){
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            // Elimina la clase cuando regrese al top
+            navbar.classList.remove('navbar-scrolled');
+        }
+    });
+    } 
+</script>
+
 <style>
     .social-icons a {
         color: var(--color-destacado);
@@ -57,11 +73,20 @@
         margin-right: 1rem;
     }
 
-    nav{
+    .navbar{
+        transition: background-color 0.3s ease;
         background-color: var(--color-header);
         font-size: var(--font-size-h1);
         font-family: var(--font-primary);
+        width: 100%;
+        position: fixed;
+        z-index: 100;
     }
+
+    .navbar-scrolled {
+    background-color: var(--color-header-2); /* Color oscuro o el que prefieras */
+    transition: background-color 0.3s ease;
+ }
 
     li a {
         color: var( --color-texto-principal);
