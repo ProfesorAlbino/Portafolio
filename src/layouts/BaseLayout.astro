@@ -21,6 +21,7 @@ import HomePage from "../pages/HomePage.astro";
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -43,20 +44,23 @@ import HomePage from "../pages/HomePage.astro";
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
+
 </html>
 
 <style>
-  body, main {
+  body,
+  main {
     width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Evita el scroll horizontal */
+    height: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal */
     background-color: var(--color-fondo-principal);
   }
 
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Para que los bordes y el padding no aumenten el tamaño del elemento */
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para que los bordes y el padding no aumenten el tamaño del elemento */
+  }
 </style>
