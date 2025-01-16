@@ -1,5 +1,19 @@
 ---
 import CardLeft from "../components/CardLeft.astro"
+import CardRight from "../components/CardRight.astro";
+
+//Imagenes
+const imageFrameworks_1 = [
+  '/images/frameworks/logo_angular.webp',
+  '/images/frameworks/logo_react.webp',
+  '/images/frameworks/logo_spring.webp',
+];
+
+const imageFrameworks_2 = [
+  '/images/frameworks/logo_angular.webp',
+  '/images/frameworks/logo_react.webp',
+  '/images/frameworks/logo_spring.webp',
+];
 ---
 
 <div class="container-fluid">
@@ -27,7 +41,8 @@ import CardLeft from "../components/CardLeft.astro"
     <div class="row">
       <div class="col-12 text-center">
         <h1>Proyectos</h1>
-         <CardLeft />
+         <CardLeft title="Titulo para el video" titleVideo="Titulo del proyecto" description="Descripcion del proyecto" url="https://www.youtube.com/embed/MqazV4hbu8E" images={imageFrameworks_1}/>
+         <CardRight title="Titulo para el video" titleVideo="Titulo del proyecto" description="Descripcion del proyecto" url="https://www.youtube.com/embed/dQw4w9WgXcQ" images={imageFrameworks_2}/>
       </div>
     </div>
   </section>
@@ -35,17 +50,14 @@ import CardLeft from "../components/CardLeft.astro"
 </div>
 
 <style>
-  /* Eliminar scroll horizontal */
   body {
-    overflow-x: hidden; /* Desactiva el scroll horizontal */
+    overflow-x: hidden;
   }
 
-  /* Imagen */
   img {
     margin-top: 1rem;
   }
 
-  /* Textos */
   p {
     color: var(--color-texto-secundario);
     font-size: large;
@@ -69,15 +81,13 @@ import CardLeft from "../components/CardLeft.astro"
     text-fill-color: transparent;
   }
 
-  /* Sección de proyectos */
   #proyectos {
     margin-top: 0;
     background-color: var(--color-fondo-secundario);
     padding: 0; /* Elimina bordes internos */
   }
 
-  /* General */
   .container-fluid {
-    padding: 0; /* Asegura que el contenedor ocupe todo el ancho */
+    padding: 0;
   }
 </style>
