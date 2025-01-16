@@ -1,26 +1,59 @@
-<div class="container-fluid text-center">
-  <img
-    src="/images/FotoPerfil.jpg"
-    alt="Jeykel Medrano"
-    class="rounded-circle"
-    width="200"
-  />
+---
+import CardLeft from "../components/CardLeft.astro"
+---
 
-  <h1 id="nombre">Jeykel Medrano Montesino</h1>
-  <p>Desarrollador Full-Stack</p>
- <p>Explora mis proyectos y conoce más sobre mí.</p>
+<div class="container-fluid">
+  <!-- Sección del perfil -->
+  <section id="perfil" class="text-center">
+    <div class="row">
+      <div class="col-12">
+        <img
+          src="/images/FotoPerfil.jpg"
+          alt="Jeykel Medrano"
+          class="rounded-circle"
+          style="width: 22vw; height: 30vw;"
+        />
+        <h1 id="nombre" class="mt-3">Jeykel Medrano Montesino</h1>
+        <p class="lead">Desarrollador Full-Stack</p>
+        <p>Explora mis proyectos y conoce más sobre mí.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="var( --color-fondo-secundario)" offset="0%"></stop><stop stop-color="var( --color-fondo-secundario)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,50L40,41.7C80,33,160,17,240,20C320,23,400,47,480,61.7C560,77,640,83,720,85C800,87,880,83,960,70C1040,57,1120,33,1200,35C1280,37,1360,63,1440,68.3C1520,73,1600,57,1680,55C1760,53,1840,67,1920,61.7C2000,57,2080,33,2160,20C2240,7,2320,3,2400,10C2480,17,2560,33,2640,48.3C2720,63,2800,77,2880,68.3C2960,60,3040,30,3120,18.3C3200,7,3280,13,3360,25C3440,37,3520,53,3600,53.3C3680,53,3760,37,3840,35C3920,33,4000,47,4080,58.3C4160,70,4240,80,4320,71.7C4400,63,4480,37,4560,33.3C4640,30,4720,50,4800,55C4880,60,4960,50,5040,45C5120,40,5200,40,5280,35C5360,30,5440,20,5520,21.7C5600,23,5680,37,5720,43.3L5760,50L5760,100L5720,100C5680,100,5600,100,5520,100C5440,100,5360,100,5280,100C5200,100,5120,100,5040,100C4960,100,4880,100,4800,100C4720,100,4640,100,4560,100C4480,100,4400,100,4320,100C4240,100,4160,100,4080,100C4000,100,3920,100,3840,100C3760,100,3680,100,3600,100C3520,100,3440,100,3360,100C3280,100,3200,100,3120,100C3040,100,2960,100,2880,100C2800,100,2720,100,2640,100C2560,100,2480,100,2400,100C2320,100,2240,100,2160,100C2080,100,2000,100,1920,100C1840,100,1760,100,1680,100C1600,100,1520,100,1440,100C1360,100,1280,100,1200,100C1120,100,1040,100,960,100C880,100,800,100,720,100C640,100,560,100,480,100C400,100,320,100,240,100C160,100,80,100,40,100L0,100Z"></path></svg>
+  <section id="proyectos" class="py-5">
+    
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Proyectos</h1>
+         <CardLeft />
+      </div>
+    </div>
+  </section>
 </div>
 
 <style>
+  /* Eliminar scroll horizontal */
+  body {
+    overflow-x: hidden; /* Desactiva el scroll horizontal */
+  }
+
+  /* Imagen */
   img {
     margin-top: 1rem;
   }
 
+  /* Textos */
   p {
     color: var(--color-texto-secundario);
     font-size: large;
     margin-top: 1rem;
     font-size: 20px;
+  }
+
+  h1 {
+    color: var(--color-texto-principal);
   }
 
   #nombre {
@@ -35,4 +68,16 @@
     text-fill-color: transparent;
   }
 
+  /* Sección de proyectos */
+  #proyectos {
+    margin-top: 0;
+    height: 100vh; /* Ocupar toda la pantalla */
+    background-color: var(--color-fondo-secundario);
+    padding: 0; /* Elimina bordes internos */
+  }
+
+  /* General */
+  .container-fluid {
+    padding: 0; /* Asegura que el contenedor ocupe todo el ancho */
+  }
 </style>

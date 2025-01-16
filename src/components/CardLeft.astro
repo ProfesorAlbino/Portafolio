@@ -1,0 +1,177 @@
+<div class="container py-5">
+    <div class="video-card">
+        <div class="row g-0">
+            <!-- Columna del Video -->
+            <div class="col-md-6">
+                <div class="video-wrapper">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/VIDEO_ID" 
+                        title="YouTube video" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Columna de la Descripción -->
+            <div class="col-md-6">
+                <div class="card-content">
+                    <div class="content-header">
+                        <h2 class="card-title">Título del Video</h2>
+                        <div class="meta-info">
+                            <span class="date">Publicado: 15 Enero, 2025</span>
+                            <span class="duration">Duración: 15:30</span>
+                        </div>
+                    </div>
+                    
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                    <div class="tags">
+                        <span class="tag">#Desarrollo</span>
+                        <span class="tag">#Programación</span>
+                        <span class="tag">#WebDesign</span>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Ver más</button>
+                        <button class="btn btn-outline-primary">Compartir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Variables de color */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f8f9fa;
+    --text-color: #333333;
+    --meta-color: #6c757d;
+    --tag-bg: #e9ecef;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la card */
+.video-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contenedor del video */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contenido de la card */
+.card-content {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-header {
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    color: var(--text-color);
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Meta información */
+.meta-info {
+    display: flex;
+    gap: 1rem;
+    color: var(--meta-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Descripción */
+.description {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Tags */
+.tags {
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background-color: var(--tag-bg);
+    color: var(--meta-color);
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Botones */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .video-wrapper {
+        margin-bottom: 1rem;
+    }
+}
+</style>
