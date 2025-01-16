@@ -1,6 +1,7 @@
 ---
 import CardLeft from "../components/CardLeft.astro"
 import CardRight from "../components/CardRight.astro";
+import Carousel from "../components/Carousel.astro";
 
 //Imagenes
 const imageFrameworks_1 = [
@@ -30,6 +31,7 @@ const imageFrameworks_2 = [
         <h1 id="nombre" class="mt-3">Jeykel Medrano Montesino</h1>
         <p class="lead">Desarrollador Full-Stack</p>
         <p>Explora mis proyectos y conoce más sobre mí.</p>
+        <a href="#acerca" class="btn btn-warning mt-3">¡Conóceme!</a>
       </div>
     </div>
   </section>
@@ -43,6 +45,25 @@ const imageFrameworks_2 = [
         <h1>Proyectos</h1>
          <CardLeft title="Titulo para el video" titleVideo="Titulo del proyecto" description="Descripcion del proyecto" url="https://www.youtube.com/embed/MqazV4hbu8E" images={imageFrameworks_1}/>
          <CardRight title="Titulo para el video" titleVideo="Titulo del proyecto" description="Descripcion del proyecto" url="https://www.youtube.com/embed/dQw4w9WgXcQ" images={imageFrameworks_2}/>
+         <div>
+          <Carousel/>
+         </div>
+      </div>
+    </div>
+  </section>
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,90L20,78.3C40,67,80,43,120,38.3C160,33,200,47,240,55C280,63,320,67,360,65C400,63,440,57,480,60C520,63,560,77,600,68.3C640,60,680,30,720,28.3C760,27,800,53,840,66.7C880,80,920,80,960,70C1000,60,1040,40,1080,41.7C1120,43,1160,67,1200,65C1240,63,1280,37,1320,28.3C1360,20,1400,30,1440,30C1480,30,1520,20,1560,18.3C1600,17,1640,23,1680,25C1720,27,1760,23,1800,33.3C1840,43,1880,67,1920,70C1960,73,2000,57,2040,56.7C2080,57,2120,73,2160,76.7C2200,80,2240,70,2280,66.7C2320,63,2360,67,2400,66.7C2440,67,2480,63,2520,63.3C2560,63,2600,67,2640,61.7C2680,57,2720,43,2760,38.3C2800,33,2840,37,2860,38.3L2880,40L2880,100L2860,100C2840,100,2800,100,2760,100C2720,100,2680,100,2640,100C2600,100,2560,100,2520,100C2480,100,2440,100,2400,100C2360,100,2320,100,2280,100C2240,100,2200,100,2160,100C2120,100,2080,100,2040,100C2000,100,1960,100,1920,100C1880,100,1840,100,1800,100C1760,100,1720,100,1680,100C1640,100,1600,100,1560,100C1520,100,1480,100,1440,100C1400,100,1360,100,1320,100C1280,100,1240,100,1200,100C1160,100,1120,100,1080,100C1040,100,1000,100,960,100C920,100,880,100,840,100C800,100,760,100,720,100C680,100,640,100,600,100C560,100,520,100,480,100C440,100,400,100,360,100C320,100,280,100,240,100C200,100,160,100,120,100C80,100,40,100,20,100L0,100Z"></path></svg>
+
+  
+ <!-- Sección de acerca de mí -->
+  <section id="acerca" class="py-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Acerca de mí</h1>
+        <p>
+          Soy un desarrollador Full-Stack con experiencia en tecnologías web
+          modernas. Me apasiona la creación de aplicaciones web y móviles
+          innovadoras que resuelvan problemas del mundo real.
+        </p>
       </div>
     </div>
   </section>
@@ -87,5 +108,16 @@ const imageFrameworks_2 = [
 
   .container-fluid{
     margin-top: 100px;
+  }
+
+  a {
+    background-color: var(--color-destacado);
+    color: var(--color-fondo-principal);
+    transition: transform 0.2s;
+  }
+
+  a:hover {
+    transform: scale(1.05);
+    color: var(--color-fondo-principal);
   }
 </style>

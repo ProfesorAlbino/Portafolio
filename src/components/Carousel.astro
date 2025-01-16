@@ -1,0 +1,197 @@
+<div class="container mt-5">
+  <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#projectCarousel"
+        data-bs-slide-to="0"
+        class="active"></button>
+      <button
+        type="button"
+        data-bs-target="#projectCarousel"
+        data-bs-slide-to="1"></button>
+      <button
+        type="button"
+        data-bs-target="#projectCarousel"
+        data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Proyecto 1 -->
+      <div class="carousel-item active">
+        <img
+          src="/images/frameworks/logo_react.webp"
+          class="project-image"
+          alt="Proyecto 1"
+        />
+        <div class="project-content">
+          <h3 class="project-title">Proyecto de Desarrollo Web</h3>
+          <p class="project-description">
+            Un sitio web moderno y responsive desarrollado con las últimas
+            tecnologías web. Incluye características como autenticación de
+            usuarios, panel de administración y integración con APIs externas.
+          </p>
+          <a href="#" class="redirect btn btn-warning">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="carousel-item">
+        <img
+          src="/images/frameworks/logo_react.webp"
+          class="project-image"
+          alt="Proyecto 2"
+        />
+        <div class="project-content">
+          <h3 class="project-title">Aplicación Móvil</h3>
+          <p class="project-description">
+            Una aplicación móvil multiplataforma diseñada para mejorar la
+            productividad. Cuenta con sincronización en tiempo real, modo
+            offline y notificaciones push personalizadas.
+          </p>
+          <a href="#" class="redirect btn btn-warning">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="carousel-item">
+        <img
+          src="/images/frameworks/logo_react.webp"
+          class="project-image"
+          alt="Proyecto 3"
+        />
+        <div class="project-content">
+          <h3 class="project-title">Sistema de E-commerce</h3>
+          <p class="project-description">
+            Plataforma completa de comercio electrónico con carrito de compras,
+            pasarela de pagos, gestión de inventario y sistema de seguimiento de
+            pedidos en tiempo real.
+          </p>
+          <a href="#" class="redirect btn btn-warning">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#projectCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#projectCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
+
+<style>
+  .carousel {
+    background-color: var(--color-fondo-principal);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    background-color: var(--color-cards);
+    border-radius: 10px;
+  }
+
+  .project-image {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .project-content {
+    padding: 2rem;
+    background: linear-gradient(
+      to bottom,
+      var(--color-header),
+      var(--color-header-2)
+    );
+    color: var(--color-texto-principal);
+  }
+
+  .project-title {
+    color: var(--color-destacado);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-description {
+    color: var(--color-texto-secundario);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-destacado);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+  }
+
+  .carousel-control-prev {
+    left: -25px;
+  }
+
+  .carousel-control-next {
+    right: -25px;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+  }
+
+  .carousel-indicators button {
+    background-color: var(--color-destacado);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+
+  @media (max-width: 768px) {
+    .project-image {
+      height: 200px;
+    }
+
+    .carousel {
+      padding: 1rem;
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+  }
+
+  .redirect {
+    background-color: var(--color-destacado);
+    color: var(--color-fondo-principal);
+    transition: transform 0.2s;
+  }
+
+  .redirect:hover {
+    transform: scale(1.05);
+    color: var(--color-fondo-principal);
+  }
+</style>
