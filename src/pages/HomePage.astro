@@ -1,20 +1,22 @@
 ---
-import CardLeft from "../components/CardLeft.astro"
+import CardLeft from "../components/CardLeft.astro";
 import CardRight from "../components/CardRight.astro";
 import Carousel from "../components/Carousel.astro";
 import AcercaDe from "./AcercaDe.astro";
+import Contact from "./contact.astro";
+import Thank from "./Thank.astro";
 
 //Imagenes
 const imageFrameworks_1 = [
-  '/images/frameworks/logo_angular.webp',
-  '/images/frameworks/logo_react.webp',
-  '/images/frameworks/logo_spring.webp',
+  "/images/frameworks/logo_angular.webp",
+  "/images/frameworks/logo_react.webp",
+  "/images/frameworks/logo_spring.webp",
 ];
 
 const imageFrameworks_2 = [
-  '/images/frameworks/logo_angular.webp',
-  '/images/frameworks/logo_react.webp',
-  '/images/frameworks/logo_spring.webp',
+  "/images/frameworks/logo_angular.webp",
+  "/images/frameworks/logo_react.webp",
+  "/images/frameworks/logo_spring.webp",
 ];
 ---
 
@@ -38,31 +40,92 @@ const imageFrameworks_2 = [
   </section>
 
   <!-- Sección de proyectos -->
-  <svg id="wave1" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="var( --color-fondo-secundario)" offset="0%"></stop><stop stop-color="var( --color-fondo-secundario)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,50L40,41.7C80,33,160,17,240,20C320,23,400,47,480,61.7C560,77,640,83,720,85C800,87,880,83,960,70C1040,57,1120,33,1200,35C1280,37,1360,63,1440,68.3C1520,73,1600,57,1680,55C1760,53,1840,67,1920,61.7C2000,57,2080,33,2160,20C2240,7,2320,3,2400,10C2480,17,2560,33,2640,48.3C2720,63,2800,77,2880,68.3C2960,60,3040,30,3120,18.3C3200,7,3280,13,3360,25C3440,37,3520,53,3600,53.3C3680,53,3760,37,3840,35C3920,33,4000,47,4080,58.3C4160,70,4240,80,4320,71.7C4400,63,4480,37,4560,33.3C4640,30,4720,50,4800,55C4880,60,4960,50,5040,45C5120,40,5200,40,5280,35C5360,30,5440,20,5520,21.7C5600,23,5680,37,5720,43.3L5760,50L5760,100L5720,100C5680,100,5600,100,5520,100C5440,100,5360,100,5280,100C5200,100,5120,100,5040,100C4960,100,4880,100,4800,100C4720,100,4640,100,4560,100C4480,100,4400,100,4320,100C4240,100,4160,100,4080,100C4000,100,3920,100,3840,100C3760,100,3680,100,3600,100C3520,100,3440,100,3360,100C3280,100,3200,100,3120,100C3040,100,2960,100,2880,100C2800,100,2720,100,2640,100C2560,100,2480,100,2400,100C2320,100,2240,100,2160,100C2080,100,2000,100,1920,100C1840,100,1760,100,1680,100C1600,100,1520,100,1440,100C1360,100,1280,100,1200,100C1120,100,1040,100,960,100C880,100,800,100,720,100C640,100,560,100,480,100C400,100,320,100,240,100C160,100,80,100,40,100L0,100Z"></path></svg>
+  <svg
+    id="wave1"
+    style="transform:rotate(0deg); transition: 0.3s"
+    viewBox="0 0 1440 100"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    ><defs
+      ><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"
+        ><stop stop-color="var( --color-fondo-secundario)" offset="0%"
+        ></stop><stop stop-color="var( --color-fondo-secundario)" offset="100%"
+        ></stop></linearGradient
+      ></defs
+    ><path
+      style="transform:translate(0, 0px); opacity:1"
+      fill="url(#sw-gradient-0)"
+      d="M0,50L40,41.7C80,33,160,17,240,20C320,23,400,47,480,61.7C560,77,640,83,720,85C800,87,880,83,960,70C1040,57,1120,33,1200,35C1280,37,1360,63,1440,68.3C1520,73,1600,57,1680,55C1760,53,1840,67,1920,61.7C2000,57,2080,33,2160,20C2240,7,2320,3,2400,10C2480,17,2560,33,2640,48.3C2720,63,2800,77,2880,68.3C2960,60,3040,30,3120,18.3C3200,7,3280,13,3360,25C3440,37,3520,53,3600,53.3C3680,53,3760,37,3840,35C3920,33,4000,47,4080,58.3C4160,70,4240,80,4320,71.7C4400,63,4480,37,4560,33.3C4640,30,4720,50,4800,55C4880,60,4960,50,5040,45C5120,40,5200,40,5280,35C5360,30,5440,20,5520,21.7C5600,23,5680,37,5720,43.3L5760,50L5760,100L5720,100C5680,100,5600,100,5520,100C5440,100,5360,100,5280,100C5200,100,5120,100,5040,100C4960,100,4880,100,4800,100C4720,100,4640,100,4560,100C4480,100,4400,100,4320,100C4240,100,4160,100,4080,100C4000,100,3920,100,3840,100C3760,100,3680,100,3600,100C3520,100,3440,100,3360,100C3280,100,3200,100,3120,100C3040,100,2960,100,2880,100C2800,100,2720,100,2640,100C2560,100,2480,100,2400,100C2320,100,2240,100,2160,100C2080,100,2000,100,1920,100C1840,100,1760,100,1680,100C1600,100,1520,100,1440,100C1360,100,1280,100,1200,100C1120,100,1040,100,960,100C880,100,800,100,720,100C640,100,560,100,480,100C400,100,320,100,240,100C160,100,80,100,40,100L0,100Z"
+    ></path></svg
+  >
   <section id="proyectos" class="py-5">
-    
     <div class="row">
       <div class="col-12 text-center">
         <h1>Proyectos</h1>
-         <CardLeft data-aos="zoom-in-right" title="Titulo para el video" titleVideo="Titulo del proyecto" description="Descripcion del proyecto" url="https://www.youtube.com/embed/MqazV4hbu8E" images={imageFrameworks_1}/>
-         <CardRight data-aos="zoom-in-left" title="Titulo para el video" titleVideo="Titulo del proyecto" description="Descripcion del proyecto" url="https://www.youtube.com/embed/dQw4w9WgXcQ" images={imageFrameworks_2}/>
-         <div>
-          <Carousel/>
-         </div>
+        <CardLeft
+          data-aos="zoom-in-right"
+          title="Titulo para el video"
+          titleVideo="Titulo del proyecto"
+          description="Descripcion del proyecto"
+          url="https://www.youtube.com/embed/MqazV4hbu8E"
+          images={imageFrameworks_1}
+        />
+        <CardRight
+          data-aos="zoom-in-left"
+          title="Titulo para el video"
+          titleVideo="Titulo del proyecto"
+          description="Descripcion del proyecto"
+          url="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          images={imageFrameworks_2}
+        />
+        <div>
+          <Carousel />
+        </div>
       </div>
     </div>
   </section>
 
-  <svg id="wave2" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,90L20,78.3C40,67,80,43,120,38.3C160,33,200,47,240,55C280,63,320,67,360,65C400,63,440,57,480,60C520,63,560,77,600,68.3C640,60,680,30,720,28.3C760,27,800,53,840,66.7C880,80,920,80,960,70C1000,60,1040,40,1080,41.7C1120,43,1160,67,1200,65C1240,63,1280,37,1320,28.3C1360,20,1400,30,1440,30C1480,30,1520,20,1560,18.3C1600,17,1640,23,1680,25C1720,27,1760,23,1800,33.3C1840,43,1880,67,1920,70C1960,73,2000,57,2040,56.7C2080,57,2120,73,2160,76.7C2200,80,2240,70,2280,66.7C2320,63,2360,67,2400,66.7C2440,67,2480,63,2520,63.3C2560,63,2600,67,2640,61.7C2680,57,2720,43,2760,38.3C2800,33,2840,37,2860,38.3L2880,40L2880,100L2860,100C2840,100,2800,100,2760,100C2720,100,2680,100,2640,100C2600,100,2560,100,2520,100C2480,100,2440,100,2400,100C2360,100,2320,100,2280,100C2240,100,2200,100,2160,100C2120,100,2080,100,2040,100C2000,100,1960,100,1920,100C1880,100,1840,100,1800,100C1760,100,1720,100,1680,100C1640,100,1600,100,1560,100C1520,100,1480,100,1440,100C1400,100,1360,100,1320,100C1280,100,1240,100,1200,100C1160,100,1120,100,1080,100C1040,100,1000,100,960,100C920,100,880,100,840,100C800,100,760,100,720,100C680,100,640,100,600,100C560,100,520,100,480,100C440,100,400,100,360,100C320,100,280,100,240,100C200,100,160,100,120,100C80,100,40,100,20,100L0,100Z"></path></svg>
- <!-- Sección de acerca de mí -->
+  <svg
+    id="wave2"
+    style="transform:rotate(180deg); transition: 0.3s"
+    viewBox="0 0 1440 100"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    ><defs
+      ><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"
+        ><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop
+          stop-color="rgba(255, 179, 11, 1)"
+          offset="100%"></stop></linearGradient
+      ></defs
+    ><path
+      style="transform:translate(0, 0px); opacity:1"
+      fill="url(#sw-gradient-0)"
+      d="M0,90L20,78.3C40,67,80,43,120,38.3C160,33,200,47,240,55C280,63,320,67,360,65C400,63,440,57,480,60C520,63,560,77,600,68.3C640,60,680,30,720,28.3C760,27,800,53,840,66.7C880,80,920,80,960,70C1000,60,1040,40,1080,41.7C1120,43,1160,67,1200,65C1240,63,1280,37,1320,28.3C1360,20,1400,30,1440,30C1480,30,1520,20,1560,18.3C1600,17,1640,23,1680,25C1720,27,1760,23,1800,33.3C1840,43,1880,67,1920,70C1960,73,2000,57,2040,56.7C2080,57,2120,73,2160,76.7C2200,80,2240,70,2280,66.7C2320,63,2360,67,2400,66.7C2440,67,2480,63,2520,63.3C2560,63,2600,67,2640,61.7C2680,57,2720,43,2760,38.3C2800,33,2840,37,2860,38.3L2880,40L2880,100L2860,100C2840,100,2800,100,2760,100C2720,100,2680,100,2640,100C2600,100,2560,100,2520,100C2480,100,2440,100,2400,100C2360,100,2320,100,2280,100C2240,100,2200,100,2160,100C2120,100,2080,100,2040,100C2000,100,1960,100,1920,100C1880,100,1840,100,1800,100C1760,100,1720,100,1680,100C1640,100,1600,100,1560,100C1520,100,1480,100,1440,100C1400,100,1360,100,1320,100C1280,100,1240,100,1200,100C1160,100,1120,100,1080,100C1040,100,1000,100,960,100C920,100,880,100,840,100C800,100,760,100,720,100C680,100,640,100,600,100C560,100,520,100,480,100C440,100,400,100,360,100C320,100,280,100,240,100C200,100,160,100,120,100C80,100,40,100,20,100L0,100Z"
+    ></path></svg
+  >
+  <!-- Sección de acerca de mí -->
   <section id="acerca" class="py-5">
-    <AcercaDe/>
+    <AcercaDe />
   </section>
 
+  <!-- Sección de contacto -->
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 180" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,36L60,36C120,36,240,36,360,48C480,60,600,84,720,90C840,96,960,84,1080,87C1200,90,1320,108,1440,108C1560,108,1680,90,1800,81C1920,72,2040,72,2160,60C2280,48,2400,24,2520,15C2640,6,2760,12,2880,21C3000,30,3120,42,3240,57C3360,72,3480,90,3600,102C3720,114,3840,120,3960,126C4080,132,4200,138,4320,138C4440,138,4560,132,4680,117C4800,102,4920,78,5040,66C5160,54,5280,54,5400,51C5520,48,5640,42,5760,48C5880,54,6000,72,6120,93C6240,114,6360,138,6480,150C6600,162,6720,162,6840,156C6960,150,7080,138,7200,114C7320,90,7440,54,7560,60C7680,66,7800,114,7920,138C8040,162,8160,162,8280,138C8400,114,8520,66,8580,42L8640,18L8640,180L8580,180C8520,180,8400,180,8280,180C8160,180,8040,180,7920,180C7800,180,7680,180,7560,180C7440,180,7320,180,7200,180C7080,180,6960,180,6840,180C6720,180,6600,180,6480,180C6360,180,6240,180,6120,180C6000,180,5880,180,5760,180C5640,180,5520,180,5400,180C5280,180,5160,180,5040,180C4920,180,4800,180,4680,180C4560,180,4440,180,4320,180C4200,180,4080,180,3960,180C3840,180,3720,180,3600,180C3480,180,3360,180,3240,180C3120,180,3000,180,2880,180C2760,180,2640,180,2520,180C2400,180,2280,180,2160,180C2040,180,1920,180,1800,180C1680,180,1560,180,1440,180C1320,180,1200,180,1080,180C960,180,840,180,720,180C600,180,480,180,360,180C240,180,120,180,60,180L0,180Z"></path></svg>
+  <section id="contacto" class="py-5">
+    <Contact />
+  </section>
+
+  <section id="thank">
+    <Thank />
+  </section>
 </div>
 
 <style>
 
+  #wave3 {
+    bottom: 0;
+    z-index: 0;
+    margin-top: -5px;
+  }
   #wave2 {
     bottom: 0;
     z-index: 0;
@@ -110,7 +173,12 @@ const imageFrameworks_2 = [
     background-color: var(--color-fondo-secundario);
   }
 
-  .container-fluid{
+  #contacto {
+    background-color: var(--color-fondo-secundario);
+    margin-top: -10px;
+  }
+
+  .container-fluid {
     margin-top: 100px;
   }
 

@@ -1,0 +1,149 @@
+<div class="container my-5">
+  <h1 class="text-center mb-5">Contáctame</h1>
+
+  <div class="row g-4">
+    <!-- Formulario de Contacto -->
+    <div class="col-lg-7">
+      <div class="contact-card p-4">
+        <form action="mailto:jeykelyamir@gmail.com" 
+        method="POST" 
+        enctype="text/plain">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Tu nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="tu@email.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Asunto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              placeholder="Asunto del mensaje"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4 py-2"
+            >Enviar Mensaje</button
+          >
+        </form>
+      </div>
+    </div>
+
+    <!-- Información de Contacto -->
+    <div class="col-lg-5">
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="contact-info-card p-4">
+            <h3><i class="icon fas fa-map-marker-alt me-2"></i>Ubicación</h3>
+            <p class="mb-0">Guapiles, Limón, Costa Rica</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="contact-info-card p-4">
+            <h3><i class="icon fas fa-envelope me-2"></i>Email</h3>
+            <p class="mb-0">jeikelyamir@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="contact-info-card p-4">
+            <h3><i class="icon fas fa-phone me-2"></i>Teléfono</h3>
+            <p class="mb-0">+506 62695329</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .contact-card {
+    background-color: var(--color-fondo-principal);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--color-destacado);
+  }
+
+  .form-control {
+    background-color: var(--color-fondo-secundario);
+    border: 1px solid var(--color-header-2);
+    color: var(--color-texto-principal);
+  }
+
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-destacado);
+    color: var(--color-texto-principal);
+    box-shadow: 0 0 0 0.25rem var(--color-destacado);
+  }
+
+  .form-control::placeholder {
+    color: var(--color-texto);
+    opacity: 0.7;
+  }
+
+  .btn-primary {
+    background-color: var(--color-destacado);
+    border-color: var(--color-destacado);
+    color: var(--color-header);
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-destacado-2);
+    border-color: var(--color-destacado-2);
+    transform: translateY(-2px);
+  }
+
+  .contact-info-card {
+    background-color: var(--color-cards);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-info-card:hover {
+    transform: translateY(-5px);
+  }
+
+  p{
+    color: var(--color-texto-secundario);
+    opacity: 0.8;
+  }
+
+  .icon {
+    color: var(--color-destacado);
+  }
+
+  h3{
+    color: var(--color-texto-principal);
+  }
+
+  h1{
+    color: var(--color-texto-principal);
+  }
+
+  label{
+    color: var(--color-texto-principal);
+  }
+</style>

@@ -1,161 +1,168 @@
-
 <section>
-<footer class="footer-main">
+  <footer class="footer-main">
     <div class="container py-5">
-        <div class="row">
-            <!-- Columna Personal -->
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                <h5 class="footer-title">Jeykel Medrano Montesino</h5>
-                <p class="footer-text">Desarrollador Full Stack apasionado por crear soluciones innovadoras y experiencias digitales únicas.</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
-            <!-- Columna Proyectos Destacados -->
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                <h5 class="footer-title">Proyectos Destacados</h5>
-                <ul class="footer-links">
-                    <li><a href="#">E-commerce Platform</a></li>
-                    <li><a href="#">Portfolio Website</a></li>
-                    <li><a href="#">Task Management App</a></li>
-                    <li><a href="#">Weather Dashboard</a></li>
-                </ul>
-            </div>
-
-            <!-- Columna Enlaces Rápidos -->
-            <div class="col-lg-4 col-md-6">
-                <h5 class="footer-title">Enlaces Rápidos</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Mí</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <!-- Columna Personal -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Jeykel Medrano Montesino</h5>
+          <p class="footer-text">
+            Desarrollador Full Stack apasionado por crear soluciones innovadoras
+            y experiencias digitales únicas.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/ProfesorAlbino" class="social-icon"
+              ><i class="fab fa-github"></i></a
+            >
+            <a
+              href="https://www.linkedin.com/in/jeykelmedran"
+              class="social-icon"><i class="fab fa-linkedin"></i></a
+            >
+            <a href="mailto:jeykelyamir@gmail.com" class="social-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Copyright -->
-        <div class="row mt-4">
-            <div class="col-12">
-                <hr class="footer-divider">
-                <p class="copyright-text text-center">
-                    © 2025 Jeykel Medrano Montesino. Todos los derechos reservados.
-                </p>
-            </div>
+        <!-- Columna Proyectos Destacados -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Proyectos Destacados</h5>
+          <ul class="footer-links">
+            <li><a href="#">E-commerce Platform</a></li>
+            <li><a href="#">Portfolio Website</a></li>
+            <li><a href="#">Task Management App</a></li>
+            <li><a href="#">Weather Dashboard</a></li>
+          </ul>
         </div>
+
+        <!-- Columna Enlaces Rápidos -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title">Enlaces Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="#perfil">Inicio</a></li>
+            <li><a href="#acerca">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <hr class="footer-divider" />
+          <p class="copyright-text text-center">
+            © 2025 Jeykel Medrano Montesino. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 </section>
 
 <style>
-    /* Estilos del Footer */
-.footer-main {
+  /* Estilos del Footer */
+  .footer-main {
     background-color: var(--color-footer);
     color: var(--color-texto-principal);
     font-family: var(--font-primary);
     font-size: var(--font-size-p);
     padding: 20px 0;
-}
+  }
 
-.footer-title {
+  .footer-title {
     color: var(--color-texto-principal);
     font-size: var(--font-size-h1);
     font-weight: 600;
     margin-bottom: 1.5rem;
     position: relative;
-}
+  }
 
-.footer-title::after {
-    content: '';
+  .footer-title::after {
+    content: "";
     position: absolute;
     left: 0;
     bottom: -8px;
     width: 50px;
     height: 2px;
     background-color: var(--color-destacado);
-}
+  }
 
-.footer-text {
+  .footer-text {
     color: var(--font-size-p);
     line-height: 1.6;
     margin-bottom: 1.5rem;
-}
+  }
 
-.footer-links {
+  .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+  }
 
-.footer-links li {
+  .footer-links li {
     margin-bottom: 12px;
-}
+  }
 
-.footer-links a {
+  .footer-links a {
     color: var(--font-size-p);
     text-decoration: none;
     transition: color 0.3s ease;
     position: relative;
-}
+  }
 
-.footer-links a:hover {
+  .footer-links a:hover {
     color: var(--color-destacado);
     padding-left: 5px;
-}
+  }
 
-.social-links {
+  .social-links {
     display: flex;
     gap: 15px;
-}
+  }
 
-.social-icon {
+  .social-icon {
     color: var(--color-texto-principal);
     font-size: 1.2rem;
     transition: color 0.3s ease;
-}
+  }
 
-.social-icon:hover {
+  .social-icon:hover {
     color: var(--color-destacado);
-}
+  }
 
-.footer-divider {
+  .footer-divider {
     border-color: var(--color-destacado);
     margin: 20px 0;
+  }
 
-}
-
-.copyright-text {
+  .copyright-text {
     color: var(--color-texto-principal);
     font-size: 0.9rem;
     margin: 0;
-}
+  }
 
-/* Efectos hover adicionales */
-.footer-links a::before {
-    content: '►';
+  /* Efectos hover adicionales */
+  .footer-links a::before {
+    content: "►";
     position: absolute;
     left: -15px;
     opacity: 0;
     transition: all 0.3s ease;
-}
+  }
 
-.footer-links a:hover::before {
+  .footer-links a:hover::before {
     opacity: 1;
     left: -10px;
-}
+  }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
     .footer-main {
-        padding: 40px 0;
+      padding: 40px 0;
     }
 
     .social-links {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
-}
+  }
 </style>

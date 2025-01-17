@@ -1,0 +1,105 @@
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10 text-center thank-you-content">
+      <h1 class="text section-title">Gracias por Explorar mi Trabajo</h1>
+      <div class="divider"></div>
+      <p class="description mb-5">
+        Me apasiona crear experiencias digitales excepcionales. Si tienes un
+        proyecto en mente o buscas colaborar, estaré encantado de discutir cómo
+        podemos trabajar juntos.
+      </p>
+
+      <div class="tech-badge d-inline-block mb-4">
+        <img src="/images/frameworks/astro-framework.svg" alt="Astro" class="mb-2" />
+        <p class="text tech-info">Desarrollado con Astro Framework</>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/ProfesorAlbino"><i class="icon fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jeykelmedrano"><i class="icon fab fa-linkedin"></i></a>
+        <a href="mailto:jeykelyamir@gmail.com">
+            <i class="icon fa-solid fa-envelope"></i>
+          </a>
+      </div>
+
+      <div class="mt-5">
+        <a href="#perfil" class="btn btn-custom">
+          <i class="fas fa-arrow-up me-2"></i>Volver al Inicio
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .thank-you-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tech-badge {
+    background: var(--color-fondo-secundario);
+    border-radius: 16px;
+    padding: 1.5rem 2.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .tech-badge:hover {
+    transform: translateY(-5px);
+  }
+
+  .btn-custom {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, var(--color-destacado) 0%,  var(--color-destacado) 100%);
+    border: none;
+    color: #000;
+  }
+
+  .btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px  var(--color-destacado-2);
+  }
+
+  .divider {
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(45deg, var(--color-destacado) 0%, var(--color-destacado) 100%);
+    margin: 2rem auto;
+    border-radius: 3px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: var(--color-texto-secundario);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+  .tech-info {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .social-links {
+    margin-top: 2rem;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .text{
+    color: var(--color-texto-principal);
+  }
+
+  .icon{
+    color: var(--color-destacado);
+  }
+</style>
