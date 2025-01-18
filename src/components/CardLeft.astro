@@ -2,6 +2,7 @@
 const {title} = Astro.props;
 const {titleVideo} = Astro.props;
 const {description} = Astro.props;
+const {urlVideo} = Astro.props;
 const {url} = Astro.props;
 const { images = [] } = Astro.props;
 ---
@@ -17,7 +18,7 @@ const { images = [] } = Astro.props;
                     <div class="row g-0">
                         <div class="col-md-6">
                             <div class="video-container">
-                                <iframe src={url} title="YouTube video player"
+                                <iframe src={urlVideo} title="YouTube video player"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                         allowfullscreen></iframe>
                             </div>
@@ -37,7 +38,7 @@ const { images = [] } = Astro.props;
                                   </div>
                                   
                             </div>
-                            <button class="btn btn-custom mt-3">Ver más</button>
+                            <a class="btn btn-custom mt-3" href={url}>Ver más</a>
                         </div>
                     </div>
                 </div>
