@@ -17,17 +17,19 @@ const { images = [] } = Astro.props;
                 <div class="card-body p-0">
                     <div class="row g-0">
                         
-                        <div class="col-md-6 p-4">
+                        <div class="col-md-6 p-4 ">
                             <h4>{titleVideo}</h4>
                             <p>{description}</p>
                             <div class="mt-5">
                                 <h5>Frameworks utilizados</h5>
-                                <div class="row">
-                                    {Array.isArray(images) && images.map((image, index) => (
-                                        <div class="col-4">
-                                          <img src={image} alt={`Imagen ${index + 1}`}/>
-                                        </div>
-                                      ))}
+                                <div class="row align-items-center justify-content-center">
+                                  {Array.isArray(images) && images.map((image, index) => (
+                                    <div class="col-4">
+                                      <a href={image.url}>
+                                        <img src={image.image} alt={`Imagen ${index + 1}`} class="IconRef"/>
+                                      </a>
+                                    </div>
+                                  ))}
                                   </div>
                             </div>
                             <a class="btn btn-custom mt-3" href={url}>Ver más</a>
@@ -102,4 +104,15 @@ const { images = [] } = Astro.props;
     width: 100%;
     height: 100%;
   }
+
+  .IconRef {
+    transition: transform 0.2s;
+    height: 100px;
+    width: 130px;
+  }
+
+  .IconRef:hover {
+    transform: scale(1.1);
+  }
+  
 </style>

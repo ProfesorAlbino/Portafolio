@@ -8,15 +8,25 @@ import Thank from "./Thank.astro";
 
 //Imagenes
 const imageFrameworks_1 = [
-  "/images/frameworks/logo_angular.webp",
-  "/images/frameworks/logo_react.webp",
-  "/images/frameworks/logo_spring.webp",
+  {
+    image: "/images/frameworks/logo_react.webp",
+    url: "https://github.com/ProfesorAlbino/FormDesign_front",
+  },
+  {
+    image: "/images/frameworks/net.webp",
+    url: "https://github.com/ProfesorAlbino/FormDesing_Back",
+  }
 ];
 
 const imageFrameworks_2 = [
-  "/images/frameworks/logo_angular.webp",
-  "/images/frameworks/logo_react.webp",
-  "/images/frameworks/logo_spring.webp",
+  {
+    image: "/images/frameworks/vue.webp",
+    url: "https://github.com/ProfesorAlbino/APAZA_Front",
+  },
+  {
+    image: "/images/frameworks/express.webp",
+    url: "https://github.com/Jonnathan-Git/APAZA_API",
+  }
 ];
 ---
 
@@ -66,21 +76,22 @@ const imageFrameworks_2 = [
           data-aos="zoom-in-right"
           title="Form Design"
           titleVideo="¿Que es Form Desing?"
-          description="Es un proyecto que busca mejorar la experiencia de usuario en formularios web. Implementa una interface para generar formularios de manera sencilla y rápida. Ademas, permite guardar información en los formularios creados dinamicamente"
-          urlVideo="https://www.youtube.com/embed/MqazV4hbu8E"
+          description="Es un proyecto que busca mejorar la experiencia de usuario en formularios web. Implementa una interface para generar formularios de manera sencilla y rápida. Ademas, permite guardar información en los formularios creados dinamicamente (En desarrollo)."
+          urlVideo="https://www.youtube.com/embed/S9Ap5oktyz8"
           url="https://formdesing.netlify.app/"
           images={imageFrameworks_1}
         />
         <CardRight
           data-aos="zoom-in-left"
-          title="Titulo para el video"
-          titleVideo="Titulo del proyecto"
-          description="Descripcion del proyecto"
-          urlVideo="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="APAZA"
+          titleVideo="¿Que es APAZA WEB?"
+          description="APAZA es una institución que ayuda a niños con TEA. Este proyecto busca mejorar la experiencia de usuario en la web de APAZA. Implementa una interface para mostrar información de la institución y permitir a los usuarios donar a la institución. (En desarrollo)"
+          urlVideo="https://www.youtube.com/embed/fr6VrCyOOm0"
+          url="https://apaza.netlify.app/"
           images={imageFrameworks_2}
         />
         <div>
-          <Carousel />
+          <!-- <Carousel /> -->
         </div>
       </div>
     </div>
