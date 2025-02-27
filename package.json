@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "astro": "^5.1.7"
+    "astro": "^5.1.7",
+    "sweetalert2": "^11.17.2",
+    "toastify-js": "^1.12.0"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.7"
+    "@types/aos": "^3.0.7",
+    "@types/toastify-js": "^1.12.3"
   }
 }
